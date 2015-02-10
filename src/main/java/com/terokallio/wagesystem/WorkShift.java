@@ -14,7 +14,6 @@ import java.util.Date;
  * 
  * @author terokallio
  * @version 0.1
- * @since   2014-11-06
  *
  */
 public class WorkShift {

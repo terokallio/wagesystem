@@ -14,7 +14,6 @@ import java.util.ArrayList;
  * Handles CSV file read operations.
  * @author terokallio
  * @version 0.1
- * @since   2014-11-06
  */
 public class CSVFileReader {
 

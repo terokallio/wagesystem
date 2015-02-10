@@ -4,6 +4,5 @@
  * 
  * @author terokallio
  * @version 0.1
- * @since   2014-11-06
  */
 package com.terokallio.wagesystem;
