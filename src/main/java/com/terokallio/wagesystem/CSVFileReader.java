@@ -39,7 +39,6 @@ public class CSVFileReader {
 			try {
 				this.br = new BufferedReader(new InputStreamReader(file, "UTF-8"));
 			} catch (Exception e) {
-				System.out.println("Could not find CSV File.");
 				System.err.println("Could not find CSV File.");
 				e.printStackTrace();
 			}

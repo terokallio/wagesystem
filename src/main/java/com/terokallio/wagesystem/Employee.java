@@ -200,7 +200,6 @@ public class Employee {
 		}
 		else {
 			// we should never get here
-			System.out.println("calculateOvertimeTimeBrackets() : WE HAVE A BUG");
 			System.err.println("calculateOvertimeTimeBrackets() : WE HAVE A BUG");
 		}
 		
@@ -234,8 +233,7 @@ public class Employee {
 	
 	
 	/**
-	 * sorts work shifts by day, just to be sure
-	 * KALLIO: NOT NEEDED NOR USED
+	 * Sort work shifts by day, just to be sure
 	 */
 	private void sortWorkshifts() {
 		Collections.sort(workList, new Comparator<WorkShift>() {
@@ -381,6 +379,5 @@ public class Employee {
 	protected double getOverTimeSalary100() {
 		return overTimeSalary100;
 	}
-
 	
 }
