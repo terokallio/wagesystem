@@ -140,7 +140,7 @@ public class Employee {
 	 */
 	protected void calculateNormalTimePerDay(List<WorkShift> worksPerDay) {
 		Iterator<WorkShift> it = worksPerDay.iterator();
-		long totalTimeForDay = 0;
+		double totalTimeForDay = 0;
 		while (it.hasNext()) {
 			WorkShift ws = (WorkShift) it.next();
 			totalTimeForDay += ws.getNormalMinutes();
@@ -148,8 +148,8 @@ public class Employee {
 		}
 		// if work shifts are longer than 8h during normal hours.
 		// don't add here, as they are calculated as overtime, so max 8h
-		if (totalTimeForDay > 480) {
-			totalTimeForDay = 480;
+		if (totalTimeForDay > EIGHT_HOUR_WORK_DAY_IN_MINUTES) {
+			totalTimeForDay = EIGHT_HOUR_WORK_DAY_IN_MINUTES;
 		}
 		this.normalTime += totalTimeForDay;
 	}
