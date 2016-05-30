@@ -1,6 +1,6 @@
 # wagesystem
 Monthly Wage Calculation system
 
-mvn exec:java
+Run the Application: mvn exec:java
 
-mvn test
+Run Test: mvn test
