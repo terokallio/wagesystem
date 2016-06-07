@@ -1,4 +1,4 @@
-# wagesystem
+# wagesystem - a nutcracker
 Monthly Wage Calculation system
 
 Run the application: mvn exec:java
